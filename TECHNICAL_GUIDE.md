@@ -940,40 +940,6 @@ It's a binary file containing three tables (users, projects, tasks). If you dele
 
 ---
 
-### Q: What's the difference between Activity 6 and Activity 7?
-**A:**
-
-| Feature | Activity 6 (ReviewFilms) | Activity 7 (Flowdesk) |
-|---------|-------------------------|----------------------|
-| **Main entities** | Movies, Reviews | Projects, Tasks, Users |
-| **Relationships** | 1 Movie → Many Reviews | 1 Project → Many Tasks, 1 User → Many Tasks |
-| **Complexity** | Simpler (2 entities) | More complex (3 entities, multiple relationships) |
-| **Main feature** | Rating calculation | Progress tracking, status management |
-| **Frontend** | Cards + details pages | Dashboard with statistics |
-| **Extra features** | None | Theme toggle, overdue alerts |
-
----
-
-## Files you can skip (for beginners)
-
-If you're presenting and want to focus on the essentials, you can skip explaining:
-- `*.css` files (just styling, not logic)
-- `nest-cli.json` (NestJS configuration)
-- `tsconfig.json` (TypeScript configuration)
-- `package.json` (dependency list)
-- `vite.config.js` (build tool settings)
-- `update-*.dto.ts` (similar to create DTOs)
-
-Focus on:
-- `main.ts` (server start + CORS)
-- Entities (database structure + relationships)
-- Controllers (routes/URLs)
-- Services (business logic)
-- `Dashboard.jsx` (entire frontend logic)
-- `api.js` (how frontend talks to backend)
-
----
-
 ## Final summary
 
 **Activity 7 is a task management system that demonstrates:**
@@ -989,18 +955,3 @@ Focus on:
 9. ✅ **CORS**: Enables cross-origin communication
 10. ❌ **No real-time**: Uses standard HTTP, not WebSocket
 11. ❌ **No authentication**: Open system, no user accounts or permissions
-
-**Think of it as:**
-A project management dashboard — like a simplified Trello or Asana — where you can create projects, assign tasks to team members, track deadlines, and monitor progress automatically.
-
-**Perfect for learning:**
-- Multiple entity relationships (one-to-many, many-to-one)
-- Foreign keys and cascade deletes
-- Filtering and grouping data (tasks by project)
-- Calculated fields (progress percentages)
-- Status workflows (todo → in-progress → completed)
-- Date handling and comparisons
-- Theme management with React
-- Parallel API requests
-
-**Good luck with your presentation! 📊✅**
